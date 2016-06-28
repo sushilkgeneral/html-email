@@ -1,0 +1,124 @@
+/* -------------------------------------
+    GLOBAL
+------------------------------------- */
+/*@font-face {
+    font-family: NeutrafaceText;
+    src: url('/NeutrafaceText-Book_Alt_LF.eot');
+    src: url('/NeutrafaceText-Book_Alt_LF.woff') format('woff');
+    font-weight: normal;
+}
+
+font-face {
+    font-family: 'NeutrafaceText';
+    src: url('/NeutrafaceText-Bold_Alt_LF.eot');
+    src: url('/NeutrafaceText-Bold_Alt_LF.woff') format('woff');
+    font-weight: bold;
+}
+*/
+
+* {
+    margin:0;
+    padding:0;
+}
+* { font-family: NeutrafaceText, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+
+img {
+    min-width: 100%;
+}
+
+body {
+    -webkit-font-smoothing:antialiased;
+    -webkit-text-size-adjust:none;
+    width: 100%!important;
+    height: 100%;
+}
+
+
+/* -------------------------------------
+        ELEMENTS
+------------------------------------- */
+a { color: #2BA6CB;
+    text-decoration: none !important;
+}
+
+.btn {
+    text-decoration:none;
+    color: #FFF;
+    background-color: #04a3dd;
+    padding:15px 0;
+    font-weight:bold;
+    text-align:center;
+    cursor:pointer;
+    display: inline-block;
+    width:100%;
+}
+
+/* -------------------------------------
+        HEADER
+------------------------------------- */
+table.head-wrap {
+    width: 100%;
+    border-collapse:collapse;
+}
+
+/* -------------------------------------
+        BODY
+------------------------------------- */
+table.body-wrap {
+    width: 100%;
+    border-collapse:collapse;
+}
+table tr td div.inner-content {
+    padding:0 55px;
+    border-width: 0 15px;
+    box-shadow: 0 2px 2px #8d6e63
+}
+
+/* -------------------------------------
+        FOOTER
+------------------------------------- */
+table.footer-wrap {
+    width: 100%;
+    clear:both!important;
+    border-collapse:collapse;
+}
+
+
+/* -------------------------------------
+        TYPOGRAPHY
+------------------------------------- */
+p.bold { font-size:16px; font-weight: 700;}
+p.lead { font-size:15px; font-weight: 400; color: #3e2723; }
+p.link { font-size:10px; font-weight: 400; color: #3e2723; }
+p.footer { font-size:11px; font-weight: 400; color: #3e2723; }
+
+
+/* ---------------------------------------------------
+        RESPONSIVENESS
+        Nuke it from orbit. It's the only way to be sure.
+------------------------------------------------------ */
+
+/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+.container {
+    display:block!important;
+    max-width:600px!important;
+    margin:0 auto!important; /* makes it centered */
+    clear:both!important;
+}
+
+.line {
+    width: 242.5px;
+    border-bottom: solid 1px #8d6e63;
+}
+
+/* This should also be a block element, so that it will fill 100% of the .container */
+.content {
+    padding:15px;
+    max-width:600px;
+    min-width: 418px;
+    margin:0 auto;
+    display:block;
+}
+
+/* Let's make sure tables in the content area are 100% wide */
+.content table { width: 100%; }
